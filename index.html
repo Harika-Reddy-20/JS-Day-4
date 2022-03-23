@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Difference between var,let and const</h1>
+    <h3>var:</h3>
+    <p>Var is global or functional scoped</p>
+    <p>Var can be redeclared</p>
+    <p>Var can be reassigned</p>
+    <p>Var can be modified later</p>
+    <h3>Let:</h3>
+    <p>Let is a block scoped</p>
+    <p>Let cannot be reassigned</p>
+    <p>Let cannot be redeclared</p>
+    <p>Let cannot be modified later</p>
+    <h3>Const:</h3>
+    <p>Const is a block scoped</p>
+    <p>Let cannot be reassigned</p>
+    <p>Let cannot be redeclared</p>
+    <p>Let cannot be modified later</p>
+
+    <h1>JS execution</h1>
+    <img src="https://miro.medium.com/max/1400/1*4rORR__Y8jS2wc2USeX9aw.gif" alt="" width="500px">
+    <h1>Write a program</h1>
+    <h4>Take a string variable age
+        a) if age less than 30 , print ""Adult"" , else ""Old"", use if else and ternary operator </h4>
+
+    <pre>
+        var a = 30;
+        if( a<30 ){
+            console.log(a < 30 ? "Adult" : "Old" );
+        }
+        else{
+            console.log( "old" );
+        }
+
+    </pre>
+    <h4> b) if age less than 15 , print ""Young"" , age greater than 15 but less than 30 print ""Adult"" else ""Old"" by
+        using if else ladder</h4>
+
+    <pre>
+    if( a<15 ){
+        console.log( "Young" );
+    }
+    else if (a>15 && a <30 ){
+        console.log( "Adult" );
+    }
+    else{
+        console.log( "Old" );
+    }
+
+</pre>
+    <h1>write a program</h1>
+    <h5>Use switch case and create Week calendar Monday - print 0 , Tuesday - print 1 and so on Sunday - print 6</h5>
+    <pre>
+        var Day = monday
+
+        switch(Day){
+            case monday:
+              return "0";
+              break;
+            case Tuesday:
+                return "1";
+                break;
+            case Wensday:
+                return "2";
+                break;
+            case thursday:
+                return "3";
+                break;
+            case friday:
+                return "4";
+                break;
+            case saturday:
+                return "5";
+                break;
+            case sunday:
+                return "6";
+                break;
+        }
+
+    </pre>
+
+    <h1>Hoisting</h1>
+    <p>Hoisting is a default Javascript mechanism where our variables and function declarations are moved to the top of
+        their scope before code execution() </p>
+    <p>Only declarations are hoisted not intilized.</p>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
